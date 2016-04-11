@@ -2,12 +2,104 @@
     represents everything beneath the CollapsingToolBarLayout
     TO ADD: all widgets needed to show details of the job
 -->
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/job_detail"
-    style="?android:attr/textAppearanceLarge"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:textIsSelectable="true"
-    tools:context="com.benjaminafallon.androidapps.example999.JobDetailFragment" />
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    >
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/jobDescriptionLiteralTextView"
+        style="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        tools:context="com.benjaminafallon.androidapps.example999.JobDetailFragment" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/aboutCompanyLiteralTextView"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:textIsSelectable="true"
+        tools:context="com.benjaminafallon.androidapps.example999.JobDetailFragment" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/aboutCompanyTextView"
+        android:textSize="18dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textIsSelectable="true"
+        tools:context="com.benjaminafallon.androidapps.example999.JobDetailFragment" />
+
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/jobOverviewLiteralTextView"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Overview"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:textIsSelectable="true"
+        tools:context="com.benjaminafallon.androidapps.example999.JobDetailFragment" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/jobOverviewTextView"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:textIsSelectable="true"
+        tools:context="com.benjaminafallon.androidapps.example999.JobDetailFragment" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/desiredSkillsLiteralTextView"
+        style="?android:attr/textAppearanceLarge"
+        android:text="Desired Knowledge and Skills:"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:textIsSelectable="true"
+        tools:context="com.benjaminafallon.androidapps.example999.JobDetailFragment" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/desiredSkillsTextView"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:textIsSelectable="true"
+        tools:context="com.benjaminafallon.androidapps.example999.JobDetailFragment" />
+
+</LinearLayout>

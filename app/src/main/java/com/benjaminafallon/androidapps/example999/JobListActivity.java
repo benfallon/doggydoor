@@ -13,6 +13,8 @@ import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 
@@ -92,7 +94,11 @@ public class JobListActivity extends AppCompatActivity {
             holder.mItem = mValues.get(position);
             holder.mIdView.setText(mValues.get(position).position);
             holder.mContentView.setText(mValues.get(position).company.name);
+            holder.mImageView.setImageResource(mValues.get(position).company.logo);
+            holder.mRatingBar.setRating(mValues.get(position).company.rating);
+            holder.mLocationView.setText(mValues.get(position).location);
 
+            //User taps on one of the rows in the RecyclerView
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -122,15 +128,21 @@ public class JobListActivity extends AppCompatActivity {
 
         public class ViewHolder extends RecyclerView.ViewHolder {
             public final View mView;
+            public final ImageView mImageView;
+            public final RatingBar mRatingBar;
             public final TextView mIdView;
             public final TextView mContentView;
+            public final TextView mLocationView;
             public DummyContent.DummyItem mItem;
 
             public ViewHolder(View view) {
                 super(view);
                 mView = view;
+                mImageView = (ImageView) view.findViewById(R.id.person_photo);
+                mRatingBar = (RatingBar) view.findViewById(R.id.companyRatingBar);
                 mIdView = (TextView) view.findViewById(R.id.txtName);
                 mContentView = (TextView) view.findViewById(R.id.companyNameTextView);
+                mLocationView = (TextView) view.findViewById(R.id.locationTextView);
             }
 
             @Override
