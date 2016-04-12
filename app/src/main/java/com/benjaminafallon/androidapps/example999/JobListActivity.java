@@ -2,6 +2,7 @@ package com.benjaminafallon.androidapps.example999;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +22,10 @@ import android.widget.TextView;
 
 import com.benjaminafallon.androidapps.example999.dummy.DummyContent;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * An activity representing a list of Jobs. This activity
@@ -58,6 +63,13 @@ public class JobListActivity extends AppCompatActivity {
             // activity should be in two-pane mode.
             mTwoPane = true;
         }
+    }
+
+    //consider: should SharedPreferences be committed in onStop or onDestroy?
+    @Override
+    protected void onStop() {
+        super.onStop();
+
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {

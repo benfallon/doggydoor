@@ -52,7 +52,7 @@ public class DummyContent {
 
         addItem(new DummyItem("3,",
                 "Senior Counsel, Territorial Disputes",
-                "Provide legal counsel to canines in crises",
+                "Provide legal counsel to canines in need",
                 "San Francisco, CA",
                 new Company(3.5f, "Slobbinger & Pawlmer LLP", "We help dogs in need.\n" +
                         "**Slobbinger & Pawlmer LLP is an equal opportunity employer and does " +
@@ -67,7 +67,7 @@ public class DummyContent {
                 "Junior Security Officer",
                 "Ensure premises are secure at all times",
                 "Sausalito, CA",
-                new Company(2.1f, "Lassie's Luxury Treat House", "We feed dogs.", R.drawable.luxury_logo),
+                new Company(2.1f, "Lassie's Luxury Treat House", "We feed dogs gourmet meals at an almost affordable price.", R.drawable.luxury_logo),
                 "• 100 decibels minimum bark level\n" +
                         "• Demonstrated ability to understand and effectively react to situations of adversity with tact, diplomacy, and courtesy\n" +
                         "• Your hair must be neatly cut and groomed. Hair will be cut short enough to prevent it from standing out when the uniform cap or hat is worn"
@@ -98,7 +98,7 @@ public class DummyContent {
         addItem(new DummyItem("7",
                 "Human Walker (Contract)",
                 "Lead my (Tammy's) human companions on daily walks around the Bay Area, ensuring they are familiar with the local territories (hydrants, trees, etc.)" +
-                        " that I (Tammy) have dominion over. I'm going on vacation for awhile.",
+                        " that I have dominion over. I'm going on vacation for a bit.",
                 "San Francisco, CA",
                 new Company(3.4f, "Tammy", "Just looking for someone to walk my humans until the end of the month.", R.drawable.australian_shepherd),
                 "• Must have deep knowledge of San Francisco's city layout\n" +
