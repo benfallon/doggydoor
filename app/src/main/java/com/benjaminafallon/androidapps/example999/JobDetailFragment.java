@@ -73,7 +73,7 @@ public class JobDetailFragment extends Fragment {
             aboutCompanyTextView.append(mItem.company.description);
 
             ((TextView) rootView.findViewById(R.id.jobOverviewTextView)).setText(mItem.description);
-            ((TextView) rootView.findViewById(R.id.desiredSkillsTextView)).setText(mItem.description);
+            ((TextView) rootView.findViewById(R.id.desiredSkillsTextView)).setText(mItem.skills);
 
             // ((TextView) rootView.findViewById(R.id.jobDescriptionLiteralTextView)).setText(mItem.description);
 

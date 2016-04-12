@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/locationTextView"
         android:layout_toRightOf="@+id/person_photo"
-        android:layout_below="@+id/companyRatingBar"
+        android:layout_below="@+id/companyNameTextView"
         />
 
 </RelativeLayout>
