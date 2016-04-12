@@ -18,8 +18,6 @@ import android.view.MenuItem;
  */
 public class JobDetailActivity extends AppCompatActivity {
 
-    boolean isFilled = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

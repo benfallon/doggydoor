@@ -3,6 +3,7 @@ package com.benjaminafallon.androidapps.example999;
 import android.app.Activity;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -74,9 +75,12 @@ public class JobDetailFragment extends Fragment {
 
             ((TextView) rootView.findViewById(R.id.jobOverviewTextView)).setText(mItem.description);
             ((TextView) rootView.findViewById(R.id.desiredSkillsTextView)).setText(mItem.skills);
-
-            // ((TextView) rootView.findViewById(R.id.jobDescriptionLiteralTextView)).setText(mItem.description);
-
+            
+            Activity activity = this.getActivity();
+            CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
+            if (appBarLayout != null) {
+                appBarLayout.setTitle(mItem.position);
+            }
         }
 
         return rootView;
