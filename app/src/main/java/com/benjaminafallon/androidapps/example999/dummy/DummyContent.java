@@ -63,10 +63,29 @@ public class DummyContent {
                 "Ensure posterity of species through reproductive means",
                 "Palo Alto, CA",
                 new Company(3.0f, "Litter of Fun", "We make dogs.", R.drawable.litteroffun_logo)));
-//        for (int i = 1; i <= COUNT; i++) {
-//            addItem(createDummyItem(i));
-//        }
+
+        addItem(new DummyItem("6",
+                "Canine Community Manager",
+                "Promote office dog engagement and satisfaction at Glassdoor's offices, rated among the best for dogs." +
+                        " Handle grievances aired by office dogs against human employees.",
+                "Mill Valley, CA",
+                new Company(4.5f, "Glassdoor", "We help people find jobs they love.", R.drawable.glassdoor_logo)));
+
+        addItem(new DummyItem("7",
+                "Human Walker (Contract)",
+                "Lead my (Tammy's) human companions on daily walks around the Bay Area, ensuring they are familiar with the local territories (hydrants, trees, etc.)" +
+                        " that I (Tammy) have dominion over. I'm going on vacation for awhile.",
+                "San Francisco, CA",
+                new Company(3.4f, "Tammy", "Just looking for someone to walk my humans until the end of the month.", R.drawable.australian_shepherd)));
+
+        addItem(new DummyItem("7",
+                "Senior Editor, 3 Under 3",
+                "Cover the most influential pups under the age of 3 for our new series \"Forbes 3 Under 3\". Be on the front lines of the dogs making the biggest bark" +
+                        " in the areas of dogpreneurship, social impact, and technology.",
+                "San Jose, CA",
+                new Company(3.8f, "Forbes", "We are the world's premier magazine covering the foremost purebred and mixed breed thought leaders.", R.drawable.forbes_logo)));
     }
+    //bullet point: \u2022
 
     private static void addItem(DummyItem item) {
         ITEMS.add(item);
