@@ -30,18 +30,19 @@ public class DummyContent {
 
     static {
         // Add some sample items.
+
         addItem(new DummyItem("1",
-                "Director of Interspecies Relations",
-                "Make sure all pets maintain peaceful relations with each other",
-                "Houndsville, CA",
-                new Company(4.5f, "Petco", "We sell animals.", R.drawable.petco_logo)
+                "Lead Scientist (Formulas)",
+                "Lead formula creation team to produce world-class food and treats that pets truly love.",
+                "Barkeley, CA",
+                new Company(4.2f, "Purina", "We make pet food, treats, and litter.", R.drawable.purina_logo)
         ));
 
         addItem(new DummyItem("2",
                 "Quality Assurance Analyst (Bones Department)",
                 "Insure industry-leading quality through rigorous primary source testing",
                 "Sheddington, CA",
-                new Company(4.2f, "Greenies", "We sell dog treats.", R.drawable.greenies_logo)
+                new Company(4.0f, "Greenies", "We sell dog treats.", R.drawable.greenies_logo)
         ));
 
 
@@ -65,8 +66,8 @@ public class DummyContent {
                 new Company(3.0f, "Litter of Fun", "We make dogs.", R.drawable.litteroffun_logo)));
 
         addItem(new DummyItem("6",
-                "Canine Community Manager",
-                "Promote office dog engagement and satisfaction at Glassdoor's offices, rated among the best for dogs." +
+                "Canine Engagement Manager",
+                "Promote office dog engagement and satisfaction at Glassdoor's offices, rated among the best in the world for dogs." +
                         " Handle grievances aired by office dogs against human employees.",
                 "Mill Valley, CA",
                 new Company(4.5f, "Glassdoor", "We help people find jobs they love.", R.drawable.glassdoor_logo)));
@@ -78,12 +79,20 @@ public class DummyContent {
                 "San Francisco, CA",
                 new Company(3.4f, "Tammy", "Just looking for someone to walk my humans until the end of the month.", R.drawable.australian_shepherd)));
 
-        addItem(new DummyItem("7",
+        addItem(new DummyItem("8",
                 "Senior Editor, 3 Under 3",
                 "Cover the most influential pups under the age of 3 for our new series \"Forbes 3 Under 3\". Be on the front lines of the dogs making the biggest bark" +
                         " in the areas of dogpreneurship, social impact, and technology.",
                 "San Jose, CA",
                 new Company(3.8f, "Forbes", "We are the world's premier magazine covering the foremost purebred and mixed breed thought leaders.", R.drawable.forbes_logo)));
+
+        addItem(new DummyItem("9",
+                "Director of Interspecies Relations",
+                "Make sure all pets maintain peaceful relations with each other",
+                "Houndsville, CA",
+                new Company(3.0f, "Petco", "We sell pets.", R.drawable.petco_logo)
+        ));
+
     }
     //bullet point: \u2022
 
